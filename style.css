@@ -5,10 +5,9 @@ h1 {
 .container{
     width: 500px;
     display: flex;
-    flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 100vh;
+    flex-wrap: wrap;
 
 }
 .box {
@@ -24,5 +23,25 @@ box-shadow: 5px 10px;
 }
 .box:hover{
 background-color: turquoise; 
-animation: myAnim 2s linear 1s infinite alternate forwards;
+animation: myAnim 2s cubic-bezier(0.32, 0, 0.67, 0) 0.1s infinite alternate backwards;
+
+}
+body{
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+
+}
+@keyframes myAnim {
+	0%,
+	50%,
+	100% {
+		opacity: 1;
+	}
+
+	25%,
+	75% {
+		opacity: 0;
+	}
 }
