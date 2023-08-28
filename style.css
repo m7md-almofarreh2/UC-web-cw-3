@@ -24,5 +24,5 @@ box-shadow: 5px 10px;
 }
 .box:hover{
 background-color: turquoise; 
-animation: myAnim 2s ease 0s 1 normal forwards;
+animation: myAnim 2s linear 1s infinite alternate forwards;
 }
